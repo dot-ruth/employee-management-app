@@ -17,7 +17,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.scss'
 })
-export class EmployeeListComponent {
+export class EmployeeListComponent implements OnInit {
   public employees: Employee[] = [];
   public pageSettings: Object;
 

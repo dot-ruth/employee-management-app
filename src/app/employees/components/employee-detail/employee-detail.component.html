@@ -1,1 +1,40 @@
-<p>employee-detail works!</p>
+<ejs-dialog [(visible)]="showDialog" header="Employee Details" [width]="'400px'" [showCloseIcon]="true" (overlayClick)="onDialogClose()">
+    <ng-template #content>
+      <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" formControlName="name" type="text" class="form-control" [ngClass]="{'is-invalid': submitted && employeeForm.controls['name'].errors}">
+          <div *ngIf="submitted && employeeForm.controls['name'].errors" class="invalid-feedback">
+            <div *ngIf="employeeForm.controls['name'].errors">Name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" formControlName="email" type="email" class="form-control" [ngClass]="{'is-invalid': submitted && employeeForm.controls['email'].errors}">
+          <div *ngIf="submitted && employeeForm.controls['email'].errors" class="invalid-feedback">
+            <div *ngIf="employeeForm.controls['email'].errors">Email is required</div>
+            <div *ngIf="employeeForm.controls['email'].errors">Email must be valid</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="department">Department</label>
+          <input id="department" formControlName="department" type="text" class="form-control" [ngClass]="{'is-invalid': submitted && employeeForm.controls['department'].errors}">
+          <div *ngIf="submitted && employeeForm.controls['department'].errors" class="invalid-feedback">
+            <div *ngIf="employeeForm.controls['department'].errors">Department is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="position">Position</label>
+          <input id="position" formControlName="position" type="text" class="form-control" [ngClass]="{'is-invalid': submitted && employeeForm.controls['position'].errors}">
+          <div *ngIf="submitted && employeeForm.controls['position'].errors" class="invalid-feedback">
+            <div *ngIf="employeeForm.controls['position'].errors">Position is required</div>
+          </div>
+        </div>
+        <div class="form-group text-right">
+          <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </ng-template>
+  </ejs-dialog>
+  

@@ -1,58 +1,73 @@
 {
-  "hash": "23b2ecdb",
-  "configHash": "a88147c1",
+  "hash": "c5fbd4bc",
+  "configHash": "7676615e",
   "lockfileHash": "d8c8d022",
-  "browserHash": "61f69e57",
+  "browserHash": "5e26a740",
   "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "641f8a1b",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "692e0a3d",
+      "fileHash": "2e57bba9",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "f2a4ba1f",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "ac9ff732",
+      "fileHash": "a9be8e95",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "efe5cf26",
+      "fileHash": "a522feab",
       "needsInterop": false
     },
     "@syncfusion/ej2-angular-dropdowns": {
       "src": "../../../../../node_modules/@syncfusion/ej2-angular-dropdowns/fesm2020/syncfusion-ej2-angular-dropdowns.mjs",
       "file": "@syncfusion_ej2-angular-dropdowns.js",
-      "fileHash": "dce90efb",
+      "fileHash": "aba328e1",
       "needsInterop": false
     },
     "@syncfusion/ej2-angular-grids": {
       "src": "../../../../../node_modules/@syncfusion/ej2-angular-grids/fesm2020/syncfusion-ej2-angular-grids.mjs",
       "file": "@syncfusion_ej2-angular-grids.js",
-      "fileHash": "311831f8",
+      "fileHash": "f9e8f464",
       "needsInterop": false
     },
     "@syncfusion/ej2-angular-popups": {
       "src": "../../../../../node_modules/@syncfusion/ej2-angular-popups/fesm2020/syncfusion-ej2-angular-popups.mjs",
       "file": "@syncfusion_ej2-angular-popups.js",
-      "fileHash": "51043e91",
+      "fileHash": "a108c9ee",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-CPBNVXXZ": {
-      "file": "chunk-CPBNVXXZ.js"
+    "chunk-5HO6YWKL": {
+      "file": "chunk-5HO6YWKL.js"
     },
-    "chunk-5IYAPA2A": {
-      "file": "chunk-5IYAPA2A.js"
+    "chunk-FCU25IV4": {
+      "file": "chunk-FCU25IV4.js"
     },
-    "chunk-SGEWHXT2": {
-      "file": "chunk-SGEWHXT2.js"
+    "chunk-XRSD2IZO": {
+      "file": "chunk-XRSD2IZO.js"
     },
-    "chunk-YJWSCW7E": {
-      "file": "chunk-YJWSCW7E.js"
+    "chunk-2QKUD3M2": {
+      "file": "chunk-2QKUD3M2.js"
+    },
+    "chunk-3FTCVDZL": {
+      "file": "chunk-3FTCVDZL.js"
     },
     "chunk-PPFKGMOX": {
       "file": "chunk-PPFKGMOX.js"
