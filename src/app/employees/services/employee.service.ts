@@ -21,6 +21,8 @@ export class EmployeeService {
   }
 
   createEmployee(employee: Employee): void {
+    const newId = this.employees.length ? Math.max(...this.employees.map(emp => emp.id)) + 1 : 1;
+    employee.id = newId;
     this.employees.push(employee);
   }
 
