@@ -1,3 +1,29 @@
+<div class="search-container mt-5">
+    <input type="text" class="form-control" placeholder="Search..." [(ngModel)]="searchText">
+    <ejs-dropdownlist [dataSource]='searchOptions' [fields]="dropdownFields" [(ngModel)]="selectedSearchOption"  placeholder='Select a serach criteria'></ejs-dropdownlist>
+    <button class="btn btn-primary" (click)="onSearch()">Search</button>
+  </div>
+
+  <ejs-grid *ngIf="filteredEmployees.length > 0" [dataSource]="filteredEmployees" allowPaging="true" allowSorting="true" >
+    <e-columns>
+      <e-column field="id" headerText="ID" width="50"></e-column>
+      <e-column field="name" headerText="Name" width="100"></e-column>
+      <e-column field="email" headerText="Email" width="150"></e-column>
+      <e-column field="department" headerText="Department" width="100"></e-column>
+      <e-column field="position" headerText="Position" width="100"></e-column>
+      <e-column headerText="Actions" width="100" [textAlign]="'Center'">
+        <ng-template #template let-data>
+            <button class="btn btn-sm btn-primary mr-1" (click)="editEmployee(data)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteEmployee(data.id)">Delete</button>
+          </ng-template>
+      </e-column>
+    </e-columns>
+  </ejs-grid>
+  
+  <div *ngIf="filteredEmployees.length === 0" class="no-results">
+    No employees found matching your search criteria.
+  </div>
+
 <div class="container mt-3">
     <div class="row">
       <div class="col-md-8">
@@ -7,6 +33,8 @@
         <button class="btn btn-primary mb-3" (click)="navigateToCreate()">Add Employee</button>
       </div>
     </div>
+
+    
     
     <div class="card">
       <ejs-grid [dataSource]="employees" [allowPaging]="true" [pageSettings]="pageSettings" [allowSorting]="true" class="mb-3">
