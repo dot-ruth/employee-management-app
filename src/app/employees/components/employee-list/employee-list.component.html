@@ -1,1 +1,20 @@
-<p>employee-list works!</p>
+
+<div class="container mt-3">
+    <button class="btn btn-primary mb-3" (click)="navigateToCreate()">Add Employee</button>
+    <ejs-grid [dataSource]="employees" [allowPaging]="true" [pageSettings]="pageSettings" [allowSorting]="true">
+      <e-columns>
+        <e-column field="id" headerText="ID" width="50" textAlign="Right"></e-column>
+        <e-column field="name" headerText="Name" width="150"></e-column>
+        <e-column field="email" headerText="Email" width="200"></e-column>
+        <e-column field="department" headerText="Department" width="150"></e-column>
+        <e-column field="position" headerText="Position" width="150"></e-column>
+        <e-column headerText="Actions" width="150" textAlign="Center">
+          <ng-template #template let-data>
+            <button class="btn btn-sm btn-primary" (click)="editEmployee(data)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteEmployee(data.id)">Delete</button>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+  
