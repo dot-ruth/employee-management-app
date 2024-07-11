@@ -2,9 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   selector: 'app-employee-list',
+  standalone:true,
+  imports:[
+    GridModule,
+    DropDownListModule,
+    DialogModule,
+  ],
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.scss'
 })
