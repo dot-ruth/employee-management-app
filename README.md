@@ -1,27 +1,42 @@
-# EmployeeManagementApp
+# Employee Management Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Overview
 
-## Development server
+This is a simple employee management application built with Angular and SyncFusion UI components. It allows users to manage a list of employees by adding, editing, deleting, and searching employees.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Display a list of employees in a grid
+- Add new employees
+- Edit existing employees
+- Delete employees
+- Search and filter employees
+- Responsive design
+- Proper error handling
+- Unit tests for key components and services
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Setup
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (>= 14.x)
+- Angular CLI (>= 12.x)
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/your-username/employee-management-app.git
+   cd employee-management-app
+2. Install dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    npm install
 
-## Further help
+3. Run the application:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+     ng serve
+     
+Navigate to http://localhost:4200/ in your browser to see the application.
